@@ -1,11 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
   //Click button transform-word(transformar-palavra)
-  document.querySelector("#btn-transform").addEventListener("click", () => {
-    let text = document.querySelector("#text").value;
-    document.querySelector("#result").innerHTML = word(text);
+
+  document.querySelector("#btn-transform").addEventListener("click",() => {
+    let text = document.querySelector("#text").value.trim();
+    if(text == ""){
+      document.querySelector("#result").innerHTML = "Texto vazio"
+    }else{
+      document.querySelector("#result").innerHTML = word(text);
+    }
+    
   });
 
+  document.addEventListener("keydown",update)
+
+  function update(event) {
+    if (event.keyCode == 13) {
+      let text = document.querySelector("#text").value.trim();
+    if(text == ""){
+      document.querySelector("#result").innerHTML = "Texto vazio"
+    }else{
+      document.querySelector("#result").innerHTML = word(text);
+    }
+    
+    };
+  };
+
   document.querySelector("#clear").addEventListener("click", () => {
+    document.querySelector("#text").value = "" ;
     document.querySelector("#result").innerHTML = "";
   });
 
