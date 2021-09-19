@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector("#btn").addEventListener("click", function () {
+  //Click button transform-word(transformar-palavra)
+  document.querySelector("#btn").addEventListener("click", () => {
     let text = document.querySelector("#text").value;
     document.querySelector("#result").innerHTML = word(text);
   });
@@ -20,4 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
     return words.join("");
   };
 
+  //click button copiar(copy)
+
+  document.querySelector("#copy").addEventListener("click", () => {
+    document.querySelector("#result").select();
+    document.execCommand("copy");
+
+    document.querySelector("#sucess-copy").innerHTML = "Copied";
+  });
 });

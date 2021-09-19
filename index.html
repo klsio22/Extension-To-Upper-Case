@@ -5,24 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/img/transformar.png">
+  <script src="/js/script.js"></script>
 
   <title>To upper Case</title>
 
 </head>
 
 <body>
-
+  
   <div class="conteiner">
+    <div class="top">
+      <h2>Transformando</h2>
+      <img src="/img/transformar.png" alt="transformar">
+    </div>
+    <div class="main">
 
-    <input id="text" type="text"></input>
-    <button id="btn">Transformar</button>
-    <div id="result"></div>
-    <button id="btn-copy">Copiar</button>
+      <div class="transform">
+        <input id="text" type="text"></input>
+        <button id="btn">Transformar</button>
+      </div>
+  
+      <hr>
 
+      <div id="result-text">
+        <textarea id="result" class="result" cols="30" rows="8" maxlength="">
+        </textarea>
+      </div>
+  
+      <hr>
+      
+      <div class="block-copy">
+        <button id="copy" class="copy">Copiar</button>
+        <p id="sucess-copy" class="sucess-copy"></p>
+      </div>
+  
+    </div>
+    
   </div>
-
 
 </body>
 

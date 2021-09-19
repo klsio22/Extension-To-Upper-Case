@@ -1,11 +1,11 @@
 {
-  "name":"To upper Case",
-  "version":"1.0",
-  "description":"Tranformar A primeira letra em maiúscula e juntar",
-  "browser_action":{
-    "default_popup":"index.html"
-  },
+  "manifest_version": 2,
 
-  "manifest_version":2
-
+  "name": "To upper Case",
+  "version": "0.0.2",
+  "description": "Tranformar A primeira letra em maiúscula e juntar",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "/img/transformar.png"
+  }
 }
