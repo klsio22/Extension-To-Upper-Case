@@ -1,13 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   //Click button transform-word(transformar-palavra)
-  document.querySelector("#btn").addEventListener("click", () => {
+  document.querySelector("#btn-transform").addEventListener("click", () => {
     let text = document.querySelector("#text").value;
     document.querySelector("#result").innerHTML = word(text);
   });
 
+  document.querySelector("#clear").addEventListener("click", () => {
+    document.querySelector("#result").innerHTML = "";
+  });
+
   let word = (text) => {
     let words = text.split(" ");
-    let lowerdText = text.toLowerCase();
 
     for (let i = 0; i < words.length; i++) {
       let newWord = words[i];

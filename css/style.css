@@ -5,11 +5,18 @@
 
 :root {
   --colorPage-primary: #3a3939;
+  --colorPage-secondary: white;
   --colorFont-primary: antiquewhite;
+  --colorFont-secondary:black;
 }
 
 hr {
   width: 15rem;
+}
+
+textarea {
+  background: var(--colorPage-secondary);
+  color: var(--colorFont-secondary);
 }
 
 body {
@@ -45,7 +52,7 @@ div {
 .conteiner {
   border: solid 1px rgb(180, 180, 180);
   width: 17rem;
-  height: 20rem;
+  height: 22rem;
 }
 
 .top {
@@ -61,25 +68,19 @@ div {
   justify-content: center;
 }
 
-.transform{
+.transform {
   display: flex;
   align-items: center;
   flex-direction: column;
-  
-}
-
-
-.line {
-  width: 15rem;
-  border: 2px solid rgb(150, 133, 133);
 }
 
 .result {
   border-radius: 8px;
-
   text-align: center;
   max-width: 15rem;
   max-height: 6rem;
+  min-width: 13rem;
+  min-height: 4rem;
 }
 
 .block-copy {
