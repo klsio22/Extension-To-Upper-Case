@@ -1,32 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //Click button transform-word(transformar-palavra)
-
-  document.querySelector("#btn-transform").addEventListener("click",() => {
+  //function anonymous to return a text
+  let textTransform = () => {
     let text = document.querySelector("#text").value.trim();
-    if(text == ""){
-      document.querySelector("#result").innerHTML = "Texto vazio"
-    }else{
+    if (text == "") {
+      document.querySelector("#result").innerHTML = "Texto vazio";
+    } else {
       document.querySelector("#result").innerHTML = word(text);
     }
-    
-  });
-
-  document.addEventListener("keydown",update)
-
-  function update(event) {
-    if (event.keyCode == 13) {
-      let text = document.querySelector("#text").value.trim();
-    if(text == ""){
-      document.querySelector("#result").innerHTML = "Texto vazio"
-    }else{
-      document.querySelector("#result").innerHTML = word(text);
-    }
-    
-    };
   };
 
+  //Click button transform-word(transformar-palavra)
+  document.querySelector("#btn-transform").addEventListener("click", () => {
+    textTransform();
+  });
+
+  //When Press enter textTransform 
+  document.addEventListener("keydown", update);
+  function update(event) {
+    if (event.keyCode == 13) {
+      textTransform();
+    }
+  }
+
   document.querySelector("#clear").addEventListener("click", () => {
-    document.querySelector("#text").value = "" ;
+    document.querySelector("#text").value = "";
     document.querySelector("#result").innerHTML = "";
   });
 
