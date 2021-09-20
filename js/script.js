@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let textTransform = () => {
     let text = document.querySelector("#text").value.trim();
     if (text == "") {
-      document.querySelector("#result").innerHTML = "Caixa de texto vazio";
+      document.querySelector("#result").innerHTML = "Caixa de texto vazia";
     } else {
       document.querySelector("#result").innerHTML = word(text);
     }
