@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 **Transformar a primeira letra em maiúscula e juntar**
 
 **Essa extensão foi criada com o proposito de Transformar a primeira letra em maiúscula e juntar o texto . Haverá acréscimo de funcionalidade em futuras versões .**
 
 <div aling= "center">
+=======
+##                                        Transformar a primeira letra em maiúscula e juntar
+------------------------------------------------------------------------------------------------------
+
+### Essa extensão foi criada com o proposito de Transformar a primeira letra em maiúscula e juntar o texto . Haverá acréscimo de funcionalidades em futuras versões.
+ .
+>>>>>>> c8b189d5959477df798348a015a90a0b979ea492
 
 ![app](https://user-images.githubusercontent.com/53840467/134056477-5416e821-170c-4ebd-98dd-bb36fdabfd21.png)
 
