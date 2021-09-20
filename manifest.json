@@ -3,7 +3,7 @@
 
   "name": "To upper Case",
   "version": "0.0.2",
-  "description": "Tranformar a primeira letra em maiúscula e juntar",
+  "description": "Transformar a primeira letra em maiúscula e juntar",
   "browser_action": {
     "default_popup": "index.html",
     "default_icon": "/img/transformar.png"
