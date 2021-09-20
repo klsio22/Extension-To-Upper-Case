@@ -2,6 +2,8 @@
 
 ### Essa extensão foi criada com o proposito de Transformar a primeira letra em maiúscula e juntar o texto . Haverá acréscimo de funcionalidades em futuras versões.
 
+<div align="center">
+
 ![app](https://user-images.githubusercontent.com/53840467/134056477-5416e821-170c-4ebd-98dd-bb36fdabfd21.png)
 
 </div>
