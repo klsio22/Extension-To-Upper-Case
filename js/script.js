@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+  let desableResult  = document.querySelector("#result")
+
+  //Disable textarea on click to avoid application bugs
+  desableResult.onclick = () => {
+    desableResult.disabled = true;
+  };
+
   //function anonymous to return a text
   let textTransform = () => {
     let text = document.querySelector("#text").value.trim();
@@ -9,8 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
+
   //Click button transform-word(transformar-palavra)
   document.querySelector("#btn-transform").addEventListener("click", () => {
+    desableResult.disabled = false;
     textTransform();
   });
 
@@ -43,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   //click button copiar(copy)
-
   document.querySelector("#copy").addEventListener("click", () => {
+    desableResult.disabled = false;
     document.querySelector("#result").select();
     document.execCommand("copy");
 
