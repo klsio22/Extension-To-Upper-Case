@@ -10,12 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let textTransform = () => {
     let text = document.querySelector("#text").value.trim();
     if (text == "") {
-      document.querySelector("#result").innerHTML = "Texto vazio";
+      document.querySelector("#result").innerHTML = "Caixa de texto vazio";
     } else {
       document.querySelector("#result").innerHTML = word(text);
     }
   };
-
 
   //Click button transform-word(transformar-palavra)
   document.querySelector("#btn-transform").addEventListener("click", () => {
@@ -57,6 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("#result").select();
     document.execCommand("copy");
 
-    document.querySelector("#sucess-copy").innerHTML = "Copied";
+    document.querySelector("#sucess-copy").innerHTML = "Copiado";
   });
 });
