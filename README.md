@@ -2,7 +2,7 @@
 
 ------------------------------------------------------------------------------------------------------
 
-### Essa exetensão foi criada com o proposito de Tranformar a primeira letra em maiúscula e juntar o texto . Haverá  acresimo de funcionalidade em futuras versões .
+### Essa exetensão foi criada com o proposito de Transformar a primeira letra em maiúscula e juntar o texto . Haverá  acresimo de funcionalidade em futuras versões .
 
 <div align="center">
   
