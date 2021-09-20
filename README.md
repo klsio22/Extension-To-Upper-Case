@@ -2,7 +2,8 @@
 
 ------------------------------------------------------------------------------------------------------
 
-### Essa exetensão foi criada com o proposito de Transformar a primeira letra em maiúscula e juntar o texto . Haverá  acresimo de funcionalidades em futuras versões .
+### Essa extensão foi criada com o proposito de Transformar a primeira letra em maiúscula e juntar o texto . Haverá acréscimo de funcionalidades em futuras versões.
+ .
 
 <div align="center">
   
