@@ -40,7 +40,7 @@ input {
 }
 
 button {
-  width: 10rem;
+  width: 8rem;
   height: 2rem;
   border-radius: 8px;
 }
@@ -90,4 +90,8 @@ div {
 
 .block-copy .copy {
   margin-right: 5px;
+}
+
+.buttons-text{
+  align-items: center;
 }

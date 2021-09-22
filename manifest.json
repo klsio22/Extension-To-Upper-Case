@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "To upper Case",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Transformar a primeira letra em maiúscula e juntar",
   "browser_action": {
     "default_popup": "index.html",

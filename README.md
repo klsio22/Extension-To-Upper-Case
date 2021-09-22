@@ -4,10 +4,9 @@
 
 <div align=center>
 
-![app](https://user-images.githubusercontent.com/53840467/134088920-f20291ea-cde9-40f0-983e-531654149beb.png)
-   
-</div>
+![app-interface](https://user-images.githubusercontent.com/53840467/134397366-556c4bfb-eb98-4947-ad8d-309d3f4204fc.png)
 
+</div>
 
 **Como instalar a extensão no navegador**
 

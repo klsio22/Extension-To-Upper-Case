@@ -16,9 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
+  document.querySelector("#btn-join").addEventListener("click", () => {
+    let text = document.querySelector("#result").innerHTML;
+    let newText = text.replaceAll(" ", "");
+    document.querySelector("#result").innerHTML = newText;
+  });
+
   let word = (text) => {
     let words = text.split(" ");
-   
+
     for (let i = 0; i < words.length; i++) {
       let newWord = words[i];
       let fistLetter = newWord[0];
@@ -27,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       words[i] = newWord;
     }
 
-    return words.join("");
+    return words.join(" ");
   };
 
   //Click button transform-word(transformar-palavra)
@@ -40,15 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("keydown", (event) => {
     if (event.keyCode == 13) {
       textTransform();
-    }  
+    }
   });
-
+  //click button to clear (Limpar)
   document.querySelector("#clear").addEventListener("click", () => {
     document.querySelector("#text").value = "";
     document.querySelector("#result").innerHTML = "";
   });
 
-  //click button copiar(copy)
+  //click button copy(copiar)
   document.querySelector("#copy").addEventListener("click", () => {
     desableResult.disabled = false;
     document.querySelector("#result").select();
