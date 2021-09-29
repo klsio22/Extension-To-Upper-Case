@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
       let newWord = words[i];
       let fistLetter = newWord[0];
       newWord = fistLetter.toUpperCase() + newWord.slice(1).toLowerCase();
-
       words[i] = newWord;
     }
 
