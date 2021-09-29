@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/transformar.png">
+  <script type="module" src="js/main.js"></script>
   <script src="js/uppercase-text.js"></script>
   <script src="js/first-letter-uppercase.js"></script>
 
@@ -16,12 +17,29 @@
 </head>
 
 <body>
-  
+
   <div class="conteiner">
+
     <div class="top">
-      <h2>Transformando Texto</h2>
-      <img src="img/transformar.png" alt="transformar">
+      <div class="title">
+        <h2>Transformando Texto</h2>
+        <img src="img/transformar.png" alt="transformar">
+      </div>
+
+      <div class="menu-option">
+        <nav>
+          <ul class="type-conversion" id="type-conversion">
+            <li><a href="">Formato Maiúsculas</a></li>
+            <li><a href="">MAIÚSCULAS</a></li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
+
+    
+
+
     <div class="main">
 
       <div class="transform">
@@ -30,32 +48,28 @@
           <button id="btn-transform">Transformar</button>
           <button id="btn-join">Juntar</button>
         </div>
-      
+
         <button id="clear">Limpar</button>
       </div>
-  
+
       <hr>
 
       <div id="result-text">
-        <textarea id="result" 
-        class="result" 
-        cols="30" 
-        rows="8" 
-        disabled>Transformando Texto</textarea>
+        <textarea id="result" class="result" cols="30" rows="8" disabled>Transformando Texto</textarea>
       </div>
-  
+
       <hr>
-      
+
       <div class="block-copy">
         <button id="copy" class="copy">Copiar</button>
         <p id="sucess-copy" class="sucess-copy"></p>
       </div>
-  
+
     </div>
-    
+
   </div>
 
-  
+
 </body>
 
 </html>

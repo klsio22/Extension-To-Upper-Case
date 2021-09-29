@@ -8,6 +8,17 @@
   --colorPage-secondary: white;
   --colorFont-primary: antiquewhite;
   --colorFont-secondary:black;
+  --colorFont-hover:rgb(184, 181, 133);
+
+}
+a {
+ color: var(--colorFont-primary);
+ text-decoration: none;
+
+}
+
+a:hover{
+  color: var(--colorFont-hover)
 }
 
 hr {
@@ -40,27 +51,50 @@ input {
 }
 
 button {
-  width: 8rem;
+  width: 7.5rem;
   height: 2rem;
   border-radius: 8px;
 }
 
 div {
-  padding: 2px;
+  padding: 1.5px 0;
 }
 
 .conteiner {
   border: solid 1px rgb(180, 180, 180);
   width: 17rem;
-  height: 22rem;
+  height: 24rem;
 }
 
 .top {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   background: #202124;
 }
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.type-conversion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type-conversion li {
+  padding: 0 1.5px;
+ 
+}
+
+.type-conversion li a {
+  border: solid 1px rgb(180, 180, 180);
+  background-color: #3a3939;
+  padding: 0 1px;
+}
+
+
 .main {
   display: flex;
   align-items: center;
@@ -72,6 +106,8 @@ div {
   display: flex;
   align-items: center;
   flex-direction: column;
+ 
+
 }
 
 .result {
